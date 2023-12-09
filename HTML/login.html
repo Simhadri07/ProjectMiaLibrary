@@ -2,48 +2,33 @@
 <html lang="en">
 
 <head>
-    <!-- Meta tags for character set, viewport, and compatibility -->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin - Project Mia Library</title>
     
-    <!-- Title for the page -->
-    <title>Login - Project Mia Library</title>
-    
-    <!-- External stylesheets -->
     <link rel="stylesheet" href="CSS/login.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    <!-- Login form container -->
-    <div class="Login-page">
-        <form action="">
-            <!-- Login heading -->
+    <video id="video-background" autoplay muted loop>
+        <source src="Videos/Hacker.mp4" type="video/mp4">
+    </video>
+
+    <div class="login-container">
+        <img src="Images/Hacker.JPG" alt="JPG">
+
+        <form>
             <h1>Login</h1>
-            <br><br>
-            <!-- Username input -->
-            <div class="input-box">
-                <input type="text" placeholder="Username" required>
-            </div>
-
-            <!-- Password input -->
-            <div class="input-box">
-                <input type="password" placeholder="Password" required>
-            </div>
-
-            <div class="remember-me">
-                <input type="checkbox" name="remember-me-btn" id="remember-me-btn">
-                <label for="remember-me-btn">Remember me</label>
-            </div>
-
-            <!-- Submit button -->
-            <div class="button">
-                <button type="submit">Sign in</button>
-            </div>
+            <input class="inputedit" type="text" placeholder="Username" required> <br>
+            <input class="inputedit" type="password" placeholder="Password" required> <br>
+            <a href="signup.html">Signup</a> || 
+            <a href="#">Login</a>
         </form>
-    </div>
 
+        <div class="forgot-password">
+            <a href="#">Forgot Password?</a>
+        </div>
+    </div>
 </body>
 
 </html>

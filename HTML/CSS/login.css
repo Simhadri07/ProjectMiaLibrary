@@ -3,77 +3,158 @@
 * {
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
-}
-
-body {
+}body {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa; 
-}
-
-.Login-page {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    overflow: hidden;
 }
 
-form {
-    background-color: #ffffff; 
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-
-h1 {
-    text-align: center;
-    color: #343a40;
-}
-
-.input-box {
-    margin-bottom: 15px;
-}
-
-input {
+#video-background {
+    position: fixed;
+    top: 0 ;
+    left: 0;
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ced4da;
-    border-radius: 4px;
-    background-color: #f1f3f5;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
-/* Styling for the Remember me checkbox */
-input[type="checkbox"] {
-    margin-right: 5px;
+#login-container {
+    text-align: center;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
 }
 
-/* Styling for the Submit button */
-.button {
+.login-container {
+    background:transparent;
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(20, 90, 20, 90 );
+    width:320px;
     text-align: center;
 }
 
-button {
-    padding: 10px 20px;
-    background-color: #007bff; /* Blue color for the button */
-    color: #fff;
+.login-container h2 {
+    width: 100%;
+    padding: 2px;
+    margin-bottom: 25px;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-bottom: 100px;
+    color:black;
+    text-shadow: #03e9f4;
+    font-size: 60px;
+    font-family:cursive;
+    font-weight: 5000;
+   box-sizing: 20px;
+}
+.login-container img {
+    border:transparent;
+    border-radius: 100px;
+    margin-bottom: 100px;
+    height: 90px;
+    width: 90px;
+    padding:12px;
+    margin-bottom: 25px;
+    background-color: rgba(140, 193, 167, 0.8);
+    
+}
+.login-container input {
+    width: 100%;
+    padding: 7px;
+    margin-bottom: 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: green;
+    background-color: black;
+}
+
+.login-container button {
+    width: 100px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #383838;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
 }
+.wrapper{
+    width: 20;
+    border: 2px;
+}
+.forgot-password {
+    margin-top: 15px;
 
-/* Hover effect for the Submit button */
-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
 }
 
-.remember-me {
-    display: flex;
-    align-items: left;
+.login-container form a{
+    position: relative;
+    display: 10px 40px;
+    padding: 2px 2px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .1s;
+    margin-top: 40px;    
+    letter-spacing: 4px;
+    font-size: 20px;
+    font-family:cursive;
+    font-weight: 5000;
+   box-sizing: 20px;
+}
+.login-container form a:hover{
+    
+    background-color: #03e9f4 ;
+    color: #fff;
+    border-radius:5px;
+    box-shadow:0 0 15px #03e9f4,
+    0 0 10px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 55px #03e9f4,
+    0 0 85px #03e9f4,
+    0 0 105px #03e9f4,
+    0 0 105px black;
+}
+.login-container  a:hover{
+    
+    color: #fff;
+    
+    
+    
+}
+input.inputedit{
+    width: 100%;
+    height: px;
+    padding: 7px;
+    background-color:rgba(239, 245, 239, 0.363);
     margin-bottom: 15px;
+    border: 2px solid rgb(6, 185, 12);
+    border-radius: 50px;
+    color:white;
+    
+    
 }
+input::placeholder{
+   
+    text-align: center;
+    height: 30px;
+    color: rgb(61, 66, 61);
+}
+form{
 
-input[type="checkbox"] {
-    margin-right: 50%;
+    border-color:white;
+    border:black 10px;
+    border-radius: 100px;
+}
+h1{
+    color: aliceblue;
+    border:50px rgb(20, 100, 10);
+    border-radius: 50px;
 }

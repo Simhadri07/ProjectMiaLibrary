@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; 
+}
+
+.Login-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+form {
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #343a40;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.input-box label {
+    margin-right: 10px; /* Adjusted margin for better spacing */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background-color: #f1f3f5;
+}
+
+/* Styling for the Remember me checkbox */
+.remember-me {
+    display: flex;
+    align-items: center; /* Adjusted alignment */
+    margin-bottom: 15px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Styling for the Submit button */
+.button {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue color for the button */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Hover effect for the Submit button */
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
