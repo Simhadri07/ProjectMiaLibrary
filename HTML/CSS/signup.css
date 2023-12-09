@@ -17,44 +17,31 @@ body {
     justify-content: center;
     height: 100vh;
 }
-
 form {
-    background-color: #ffffff; 
+    background-color: transparent; 
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+
 h1 {
     text-align: center;
-    color: #343a40;
+    color: #ff0000;
+    box-sizing: content-box;
 }
-
-.input-box {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
+.input-box{
+    margin-bottom: 10%;
 }
-
-.input-box label {
-    margin-right: 10px; /* Adjusted margin for better spacing */
-}
-
-input {
-    width: 100%;
+.input-box input {
+    width: 300px;
     padding: 10px;
-    border: 1px solid #ced4da;
-    border-radius: 4px;
-    background-color: #f1f3f5;
+    border: 3px solid #0058b1;
+    border-radius: 30px;
+    background-color: rgb(rgb(119, 56, 56), rgb(5, 255, 5), rgb(36, 36, 70));
 }
 
 /* Styling for the Remember me checkbox */
-.remember-me {
-    display: flex;
-    align-items: center; /* Adjusted alignment */
-    margin-bottom: 15px;
-}
-
 input[type="checkbox"] {
     margin-right: 5px;
 }
@@ -75,5 +62,27 @@ button {
 
 /* Hover effect for the Submit button */
 button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #007c42; /* Darker blue on hover */
+}
+
+.remember-me {
+    display: flex;
+    align-items: left;
+    margin-bottom: 15px;
+}
+
+input[type="checkbox"] {
+    margin-right: 50%;
+}
+#video-background {
+    position: fixed;
+    top: 0 ;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+::placeholder{
+    text-align: center;
 }

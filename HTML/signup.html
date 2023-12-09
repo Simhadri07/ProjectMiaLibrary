@@ -16,48 +16,46 @@
 </head>
 
 <body>
+    <video id="video-background" autoplay muted loop>
+        <source src="Videos/Network.mp4" type="video/mp4">
+    </video>
     <!-- Login form container -->
     <div class="Login-page">
         <form action="" method="post">
             <h1>Signup</h1>
             <br>
             <div class="input-box">
-                <label for="first_name">First_Name:</label>
                 <input type="text" name="first_name" placeholder="First Name" required>
             </div>
             
             <div class="input-box">
-                <label for="last_name">Last_Name:</label>
                 <input type="text" name="last_name" placeholder="Last Name" required>
             </div>
             
             <div class="input-box">
-                <label for="dob">Date_Of_Birth:</label>
                 <input type="text" name="dob" placeholder="Date of birth" required>
             </div>
             
             <div class="input-box">
-                <label for="email">Email_ID:</label>
                 <input type="text" name="email" placeholder="Email ID" required>
             </div>
             
             <div class="input-box">
-                <label for="username">Username:</label>
                 <input type="text" name="username" placeholder="Username" required>
             </div>
 
             <div class="input-box">
-                <label for="password">Password:</label>
                 <input type="password" name="password" placeholder="Password" required>
             </div>
             
             <div class="input-box">
-                <label for="confirm_password">Confirm_Password:</label>
                 <input type="password" name="confirm_password" placeholder="Confirm Password" required>
             </div>
 
             <div class="button">
-                <button type="submit">Sign up</button>
+                <a href="login.html"><button name="Login" type="submit">Login</button></a>
+                <a href="#"><button name="Signup" type="submit">Sign up</button></a>
+                
             </div>
         </form>
     </div>
